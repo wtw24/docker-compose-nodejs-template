@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+
+  node-cli:
+    build:
+      context: ./docker
+      dockerfile: development/node/Dockerfile
+    volumes:
+      - ./src:/app
+    tty: true
